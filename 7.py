@@ -1,11 +1,11 @@
-def count_squares(A, B, C):
-    count = 0
-    while A >= C and B >=C:
-        A-= C
-        B-= C
+A = int(input("введите длину прямоугольника A: "))
+B = int(input("введите ширину прямоугольника B: "))
+C = int(input("введите длину стороны квадрата C: "))
+count = 0
+while A >= C:
+    A-= C
+    B1 = B
+    while B1>= C:
+        B1 -= C 
         count += 1
-    return count
-A = int(input("Введите длину прямоугольника A: "))
-B = int(input("Введите ширину прямоугольника B: "))
-C = int(input("Введите длину стороны квадрата C: "))
-print("Количество квадратов:", count_squares(A, B, C))
+print(count)
